@@ -7,19 +7,19 @@ Flask==1.1.2
 isort==4.3.21
 itsdangerous==1.1.0
 Jinja2==2.11.2
-joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
+joblib
 kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
-matplotlib @ file:///C:/ci/matplotlib-base_1597876438601/work
+matplotlib
 mccabe==0.6.1
 mkl-fft==1.2.0
 mkl-random==1.1.1
 mkl-service==2.3.0
-numpy @ file:///C:/ci/numpy_and_numpy_base_1596215850360/work
+numpy
 olefile==0.46
-pandas @ file:///C:/ci/pandas_1598371563714/work
-Pillow @ file:///C:/ci/pillow_1594298230227/work
+pandas
+Pillow
 pylint==2.4.4
 pyparsing==2.4.7
 python-dateutil==2.8.1
