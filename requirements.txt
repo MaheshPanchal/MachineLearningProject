@@ -13,9 +13,6 @@ lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 matplotlib
 mccabe==0.6.1
-mkl-fft==1.2.0
-mkl-random==1.1.1
-mkl-service==2.3.0
 numpy
 olefile==0.46
 pandas
