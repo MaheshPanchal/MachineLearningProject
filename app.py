@@ -54,3 +54,7 @@ def index():
 def WorkData():
     return render_template('World.html', current=current, total=total, url='images/new_plot.png',urlPred='images/new_plotPredWorld.png')
 
+
+if __name__=='__main__':
+    app.run()
+
