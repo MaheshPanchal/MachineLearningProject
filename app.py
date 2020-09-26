@@ -24,7 +24,7 @@ def index():
     plt.title('# of Coronavirus Cases Over Time', size=30)
     plt.xlabel('Days Since 1/22/2020', size=30)
     plt.ylabel('# of Cases', size=30)
-    plt.legend(['India : Confirmed Cases', 'Algo'], prop={'size': 20})
+    plt.legend(['India : Active Cases', 'Prediction'], prop={'size': 20})
     plt.xticks(size=20)
     plt.yticks(size=20)
     plt.axvline(x=adjusted_dates[-1], linestyle='--', color='red')
