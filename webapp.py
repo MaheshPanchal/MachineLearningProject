@@ -6,6 +6,9 @@ import os
 
 app = Flask(__name__, static_url_path='/static')
 
+const PORT = process.env.PORT || '8080'
+app.set("port", PORT)
+
 @app.route("/", methods=['GET', 'POST'])
 def index():
     model = joblib.load("modelActiveIndiaCases.pkl")
