@@ -12,7 +12,7 @@ def index():
     future_forcast = joblib.load("future_forcast.pkl")
     india_active = joblib.load("india_active.pkl")
     adjusted_dates = future_forcast[:-10]
-    india_active_predicted = model.predict(future_forcast)
+    india_active_predicted = model.predict(future_forcast[235:])
     listCnt = []
     listCnt.append(int(india_active[-1]))
     listCnt.append(int(india_active_predicted[-1]))
@@ -20,7 +20,7 @@ def index():
     #Graphical Presentation
     plt.figure(figsize=(16, 11))
     plt.plot(adjusted_dates, india_active)
-    plt.plot(future_forcast, india_active_predicted, linestyle='dashed', color='purple')
+    plt.plot(future_forcast[235:], india_active_predicted, linestyle='dashed', color='purple')
     plt.title('# of Coronavirus Cases Over Time', size=30)
     plt.xlabel('Days Since 1/22/2020', size=30)
     plt.ylabel('# of Cases', size=30)
